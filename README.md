@@ -68,3 +68,10 @@ Las listas anidadas son listas dentro de listas
 
 Para meter una lista dentro de otra utilizamos la tabulacion.
 
+### Imagenes
+
+Para añadir una imagen, hemos de dar una descripcion y el nombre de la imagen (con la ruta si hiciera falta).
+
+![Debian](debian_logo)
+
+La sintaxis es: exclamacion seguido de una descripcion dentro de llaves anguladas, seguido de el nombre de la imagen enrte parentesis (sin espacios entre exclamacion, llaves anguladas y parentesis).
