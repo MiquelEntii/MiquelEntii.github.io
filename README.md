@@ -72,6 +72,8 @@ Para meter una lista dentro de otra utilizamos la tabulacion.
 
 Para añadir una imagen, hemos de dar una descripcion y el nombre de la imagen (con la ruta si hiciera falta).
 
-![Debian](debian_logo)
+![Debian](debian_logo.jpg)
+
+La sintaxis es: exclamacion seguido de una descripcion dentro de llaves anguladas, seguido de el nombre de la imagen enrte parentesis (sin espacios entre exclamacion, llaves anguladas y parentesis).
 
 La sintaxis es: exclamacion seguido de una descripcion dentro de llaves anguladas, seguido de el nombre de la imagen enrte parentesis (sin espacios entre exclamacion, llaves anguladas y parentesis).
