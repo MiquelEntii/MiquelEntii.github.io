@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head> 
+        <meta charset="utf-8" />
+        <title> Miquel </title>
+        <link rel="stylesheet" href="estilos.css" />
+    </head>
+
+    <body>
+        <main>
+            <header>
+                <h1>Minigame</h1>
+            </header>
+
+            <form>
+				<h2>Adivina un numero entre el 1 y el 100 :D </h2>
+                <p id="mensaje"><em>Haz click</em></p>
+				<p><label for="login_form">Bingus!! </label><input type="text" name="login" id="login_form" placeholder="Ej: 10"/></p>
+                <p><label for="adivina">Hecho! >> </label><input type="button" name="but" value="Enviar" id="adivina"/></p>
+			</form>
+
+            <script>
+
+                let numero_random = Math.floor(Math.random()*100) + 1;
+                let adivina = document.getElementById("adivina");
+                let numero = document.getElementById("login_form");
+
+                adivina.addEventListener("click", function(event) {
+
+                    let mensaje = document.getElementById("mensaje");
+
+                    console.log("click", numero_random);
+                    if (numero_random > numero.value){
+                        console.log("El numero a adivinar era mayor");
+
+                        mensaje.innerHTML = "El numero a a divinar era mayor";
+                    }
+                    if (numero_random < numero.value){
+                        console.log("El numero a adivinar era menor");
+
+                        mensaje.innerHTML = "El numero a a divinar era menor";
+                    }
+                    if (numero_random == numero.value){
+                        console.log("El numero a adivinar es correcto!!");
+
+                        mensaje.innerHTML = "El numero a a divinar era correcto!!!";
+                    }
+
+                } );
+
+            </script>
+
+            <footer>
+                Miquel Villar WEB &copy; 2024
+            </footer>
+        </main>
+
+    </body>
+</html>

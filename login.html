@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head> 
+        <meta charset="utf-8" />
+        <title> Miquel </title>
+		<link rel="stylesheet" href="estilosLogin.css" />
+
+		<script>
+			/*
+			function saludo (){
+				console.log("ola")
+			}
+
+			let nombre = "Jacinto";
+			console.log("ola k ase "+nombre);
+
+			for (let i = 0; i < 10; i++){
+				console.log(i);
+			}
+
+			let pelis = ["Santiago", "se", "va", "de", "camping"]
+			for (let i = 0; i < pelis.length; i++){
+				console.log(pelis[i]);
+			}
+
+			saludo();
+			saludo();
+			*/
+			
+			
+		</script>
+
+    </head>
+	
+	<header>
+			<h2>uwu: </h2>
+	</header>
+	<nav>
+		<ul>
+			<li>  <a href="Index.html"> --Volver-- </a> </li>
+		</ul>
+	</nav>
+	
+	<body>
+		
+		<main>
+			<form>
+				<h2>Register: </h2>
+				<p><label for="login_form">Login: </label><input type="text" name="login" id="login_form" placeholder="Tu nombre de usr..."/></p>
+				<p><label for="pass_form">Password: </label><input type="password" name="pass" id="pass_form" placeholder="Tu Contraseña"/></p>
+				<p><label for="repass_form">Repeat Password: </label><input type="password" name="repass" id="repass_form" placeholder="Repite Tu Contraseña"/></p>
+				<p><label for="submit_form">Hecho! >> </label><input type="submit" name="submit" id="submit_form"/></p>
+			</form>
+
+			
+
+			<form>
+				<h2>Login: </h2>
+				<p><label for="log_form">Login: </label><input type="text" name="log" id="log_form" placeholder="Tu nombre de usr..."/><em id="error_log_user"></em></p>
+				<p><label for="passw_form">Password: </label><input type="password" name="passw" id="passw_form" placeholder="Tu Contraseña"/><em id="error_pass_user"></em></p>
+				<p><label for="button_login">Hecho! >> </label><input type="button" name="but" value="Bingus" id="button_login"/></p>
+
+				<script>
+
+					function haz_click (){
+						
+						let comp = /"/;
+						let user = document.getElementById("log_form");
+						console.log("click");
+						console.log(user.value.length);
+
+						let pass = document.getElementById("passw_form");
+						console.log("click");
+						console.log(pass.value);
+
+						let log_length = user.value.length;
+						let pass_length = pass.value.length;
+						let error_log_user = document.getElementById("error_log_user");
+						let error_pass_user = document.getElementById("error_pass_user");
+
+						if(comp.test(user.value)){
+							error_log_user.innerHTML = "  <<  Caracteres prohibidos";
+							error_log_user.style.color = "red";
+
+						}
+						else
+							error_log_user.innerHTML = "Ok";
+							error_log_user.style.color = "green";
+					
+						if (log_length < 4){
+							alert("El nombre de usuario debe tener minimo 4 caracteres");
+							
+						}
+
+						if (pass_length < 6 || pass_length > 16){
+							alert("La contraseña debe tener entre 6 y 16 caracteres");
+							error_pass_user.innerHTML = "  <<  Entre 6 y 16 caracteres";
+							error_pass_user.style.color = "red";
+						}
+					}
+
+					let boton = document.getElementById("button_login");
+					boton.addEventListener("click", haz_click);
+					
+
+				</script>
+			</form>
+		</main>
+		<footer>
+			Miquel Villar WEB &copy; 2024
+		</footer>
+	</body>
+</html>
